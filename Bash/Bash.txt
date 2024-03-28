@@ -1,0 +1,20 @@
+cd special_folder_git_rep
+cd Final_QA_project
+mkdir Bash
+cd Bash
+touch Bash.txt
+vim Bash.txt
+"Курс от Nordic IT school направление QA очень понравился спустя пару месяцев изучения почувствовал некую увереность своих знаний для позиции Junior тестировщик"
+Нажать на клавишу ESC
+Зажать клавишу SHIFT и ввести :wq -> Нажать ENTER
+cat Bash.txt | grep "cd"
+cat Bash.txt | grep "cd" > New_bash.txt
+ls
+ls -a
+pwd
+cd ..
+mkdir Folder_1 Folder_2
+cd Folder_1
+touch document.txt
+cp document.txt ../Folder_2/
+
