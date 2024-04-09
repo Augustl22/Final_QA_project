@@ -71,4 +71,3 @@ jobs:
       - name: run script
         run: |
           bash Bash_script/check_website.sh
-          google.com
