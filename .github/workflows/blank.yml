@@ -49,7 +49,10 @@ jobs:
 
       - name: Install newman
         run: npm install -g newman
-
-      - name: run PetCollerction
-        run: cd Postman
-             bash PostmanRunCollectionPetstore.sh
+      - name: pwd
+        run: pwd
+      - name: ls
+        run: ls
+    #  - name: run PetCollerction
+     #   run: cd Postman
+      #       bash PostmanRunCollectionPetstore.sh
