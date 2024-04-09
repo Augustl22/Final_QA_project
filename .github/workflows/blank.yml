@@ -50,7 +50,7 @@ jobs:
       - name: Install newman
         run: npm install -g newman
       - name: cd Postman
-        run: cd Postman/,
+        run: cd Postman/
              ls
       - name: ls
         run: ls
