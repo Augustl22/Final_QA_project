@@ -61,6 +61,9 @@ jobs:
      - build
      - Postman_run_collection_script
 
+    env:
+      URL: google.com
+    
     steps:
 
       - uses: actions/checkout@v3
