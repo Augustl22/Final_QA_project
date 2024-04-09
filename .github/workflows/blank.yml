@@ -34,11 +34,13 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
-    Postman_run_collection_script:
+  Postman_run_collection_script:
+  
     runs-on: ubuntu-latest
+
     needs:
      - build
-     - autotests
+
     steps:
 
       - uses: actions/checkout@v3
