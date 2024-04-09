@@ -62,7 +62,7 @@ jobs:
      - Postman_run_collection_script
 
     env:
-      URL: google.com
+      URL: "google.com"
     
     steps:
 
