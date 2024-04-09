@@ -49,7 +49,9 @@ jobs:
         run: npm install -g newman
 
       - name: run PetCollerction
-        run: newman run Postman/Petstore_collection.postman_collection.json -e Postman/Petstore.postman_environment.json
+        run: newman run Postman/Petstore_collection.postman_collection.json -e Postman/Petstore.postman_environment.json > Postman/Postman.log
+      - name: cat Postman.log
+        run: cat Postman/Postman.log
   
   Check_web_site_script:
 
