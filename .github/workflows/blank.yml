@@ -67,5 +67,4 @@ jobs:
 
       - name: run script
         run: |
-          $URL = "google.com"
-          bash Bash_script/check_website.sh
+          bash Bash_script/check_website.sh google.com
