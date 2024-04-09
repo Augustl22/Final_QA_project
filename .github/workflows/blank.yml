@@ -47,6 +47,21 @@ jobs:
 
       - name: Install newman
         run: npm install -g newman
-        
+
       - name: run PetCollerction
         run: newman run Postman/Petstore_collection.postman_collection.json -e Postman/Petstore.postman_environment.json
+  
+    Check_web_site_script:
+
+    runs-on: ubuntu-latest
+
+    needs:
+     - build
+     - Postman_run_collection_script
+
+    steps:
+
+      - uses: actions/checkout@v3
+
+      - name: run script
+        run: bash Bash_script/check_website.sh
