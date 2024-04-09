@@ -51,7 +51,7 @@ jobs:
       - name: run PetCollerction
         run: newman run Postman/Petstore_collection.postman_collection.json -e Postman/Petstore.postman_environment.json
   
-    Check_web_site_script:
+  Check_web_site_script:
 
     runs-on: ubuntu-latest
 
