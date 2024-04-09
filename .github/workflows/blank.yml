@@ -49,8 +49,8 @@ jobs:
 
       - name: Install newman
         run: npm install -g newman
-      - name: pwd
-        run: pwd
+      - name: cd Postman
+        run: cd Postman/
       - name: ls
         run: ls
     #  - name: run PetCollerction
