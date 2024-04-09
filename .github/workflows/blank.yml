@@ -35,7 +35,7 @@ jobs:
           echo test, and deploy your project.
 
   Postman_run_collection_script:
-  
+
     runs-on: ubuntu-latest
 
     needs:
@@ -52,4 +52,4 @@ jobs:
 
       - name: run PetCollerction
         run: cd Postman
-        run: bash PostmanRunCollectionPetstore.sh
+             bash PostmanRunCollectionPetstore.sh
