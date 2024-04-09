@@ -1,0 +1,9 @@
+{
+	"ref": "absd-efgh",
+	"amount": "СТО ДВАДЦАТЬ ТЫСЯЧ РУБЛЕЙ",
+	"message": "-1",
+	"actionUrl": "/loan-offer/absd-efgh",
+	"buttonText": "-1",
+	"type": "offer",
+	"rate": "-1.00%"
+}
