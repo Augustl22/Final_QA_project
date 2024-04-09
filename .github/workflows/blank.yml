@@ -60,9 +60,6 @@ jobs:
     needs:
      - build
      - Postman_run_collection_script
-
-    env:
-      $URL: "google.com"
     
     steps:
 
@@ -70,4 +67,5 @@ jobs:
 
       - name: run script
         run: |
+          $URL = "google.com"
           bash Bash_script/check_website.sh
