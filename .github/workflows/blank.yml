@@ -44,10 +44,9 @@ jobs:
     steps:
 
       - uses: actions/checkout@v3
-      - name: check Node.js
-        run: node -v
 
       - name: Install newman
         run: npm install -g newman
+        
       - name: run PetCollerction
         run: newman run Postman/Petstore_collection.postman_collection.json -e Postman/Petstore.postman_environment.json
