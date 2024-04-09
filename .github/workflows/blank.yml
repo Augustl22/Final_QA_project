@@ -69,4 +69,6 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: run script
-        run: bash Bash_script/check_website.sh
+        run: |
+          bash Bash_script/check_website.sh
+          google.com
