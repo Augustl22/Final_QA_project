@@ -3,18 +3,18 @@ newman
 Petstore_collection
 
 → create_list_of_users
-  POST https://petstore.swagger.io/v2/user/createWithList [200 OK, 370B, 664ms]
+  POST https://petstore.swagger.io/v2/user/createWithList [200 OK, 370B, 674ms]
   √  Status code is 200
   √  Check message
-  1. Response time is less than 200ms
+  1. Response time is less than 500ms
   √  Response body contains expected data
   √  Date is present
 
 → get_user_by_user_name
-  GET https://petstore.swagger.io/v2/user/1 [200 OK, 452B, 134ms]
+  GET https://petstore.swagger.io/v2/user/1 [200 OK, 445B, 129ms]
   ┌
   │ {
-  │   id: 9223372036854758000,
+  │   id: 999889932417,
   │   username: '1',
   │   firstName: '1',
   │   lastName: '1',
@@ -30,14 +30,14 @@ Petstore_collection
   √  Date is present
 
 → update_user
-  PUT https://petstore.swagger.io/v2/user/1 [200 OK, 387B, 132ms]
+  PUT https://petstore.swagger.io/v2/user/1 [200 OK, 380B, 127ms]
   √  Status code is 200
   √  Response time is less than 200ms
   √  Response body contains expected data
   √  Date is present
 
 → delete_user
-  DELETE https://petstore.swagger.io/v2/user/3 [200 OK, 369B, 132ms]
+  DELETE https://petstore.swagger.io/v2/user/3 [200 OK, 369B, 127ms]
   √  Status code is 200
   √  Response time is less than 200ms
   √  Date is present
@@ -56,16 +56,16 @@ Petstore_collection
 ├─────────────────────────┼─────────────────────┼────────────────────┤
 │              assertions │                  17 │                  1 │
 ├─────────────────────────┴─────────────────────┴────────────────────┤
-│ total run duration: 1523ms                                         │
+│ total run duration: 1572ms                                         │
 ├────────────────────────────────────────────────────────────────────┤
-│ total data received: 274B (approx)                                 │
+│ total data received: 260B (approx)                                 │
 ├────────────────────────────────────────────────────────────────────┤
-│ average response time: 265ms [min: 132ms, max: 664ms, s.d.: 230ms] │
+│ average response time: 264ms [min: 127ms, max: 674ms, s.d.: 236ms] │
 └────────────────────────────────────────────────────────────────────┘
 
 [31m  # [39m[31m failure        [39m[31m detail                           [39m
 [90m    [39m[90m                [39m[90m                                  [39m
- 1.  AssertionError  Response time is less than 200ms 
-                     expected 664 to be below 200     
+ 1.  AssertionError  Response time is less than 500ms 
+                     expected 674 to be below 500     
                      at assertion:2 in test-script    
                      inside "create_list_of_users"    
