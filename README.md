@@ -4,4 +4,4 @@
 
 ### Мои контакты
 - Telegram: [@August_yeah](http://t.me/August_yeah "Telegram channel")
-- e-mail: mochalovv09@gmail.com
+- E-mail: mochalovv09@gmail.com
